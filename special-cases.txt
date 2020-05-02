@@ -1,0 +1,203 @@
+https://docs.python.org/2.7/library/functions.html#apply
+https://docs.python.org/3/tutorial/controlflow.html#tut-unpacking-arguments
+
+'library/unittest.html#unittest.TestCase.failUnlessEqual': 'library/unittest.html#unittest.TestCase.assertEqual',
+'library/unittest.html#unittest.TestCase.assertEquals': 'library/unittest.html#unittest.TestCase.assertEqual',
+'library/unittest.html#unittest.TestCase.failIfEqual': 'library/unittest.html#unittest.TestCase.assertNotEqual',
+'library/unittest.html#unittest.TestCase.assertNotEquals': 'library/unittest.html#unittest.TestCase.assertNotEqual',
+'library/unittest.html#unittest.TestCase.failUnless': 'library/unittest.html#unittest.TestCase.assertTrue',
+'library/unittest.html#unittest.TestCase.assert_': 'library/unittest.html#unittest.TestCase.assertTrue',
+'library/unittest.html#unittest.TestCase.failIf': 'library/unittest.html#unittest.TestCase.assertFalse',
+'library/unittest.html#unittest.TestCase.failUnlessRaises': 'library/unittest.html#unittest.TestCase.assertRaises',
+'library/unittest.html#unittest.TestCase.failUnlessAlmostEqual': 'library/unittest.html#unittest.TestCase.assertAlmostEqual',
+'library/unittest.html#unittest.TestCase.assertAlmostEquals': 'library/unittest.html#unittest.TestCase.assertAlmostEqual',
+'library/unittest.html#unittest.TestCase.failIfAlmostEqual': 'library/unittest.html#unittest.TestCase.assertNotAlmostEqual',
+'library/unittest.html#unittest.TestCase.assertNotAlmostEquals': 'library/unittest.html#unittest.TestCase.assertNotAlmostEqual',
+
+
+https://docs.python.org/2.7/library/functions.html#basestring
+https://docs.python.org/2.7/library/functions.html#str
+
+https://docs.python.org/2.7/library/functions.html#buffer
+https://docs.python.org/2.7/library/stdtypes.html#memoryview
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.iteritems
+https://docs.python.org/2.7/library/stdtypes.html#dict.items
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.iterkeys
+https://docs.python.org/2.7/library/stdtypes.html#dict.keys
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.itervalues
+https://docs.python.org/2.7/library/stdtypes.html#dict.values
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.viewitems
+https://docs.python.org/2.7/library/stdtypes.html#dict.items
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.viewkeys
+https://docs.python.org/2.7/library/stdtypes.html#dict.keys
+
+https://docs.python.org/2.7/library/stdtypes.html#dict.viewvalues
+https://docs.python.org/2.7/library/stdtypes.html#dict.values
+
+https://docs.python.org/2.7/reference/simple_stmts.html#exec
+https://docs.python.org/3/library/functions.html#exec
+
+https://docs.python.org/2.7/library/functions.html#execfile
+https://docs.python.org/2.7/library/functions.html#open https://docs.python.org/2.7/library/functions.html#compile https://docs.python.org/3/library/functions.html#exec
+
+https://docs.python.org/2.7/library/sys.html#sys.exitfunc
+https://docs.python.org/3/library/atexit.html#module-atexit
+
+
+func_closure, func_code, func_defaults, func_dict, func_doc, func_globals, func_name
+__closure__, __code__, __defaults__, __dict__, __doc__, __globals__, __name__
+
+
+https://docs.python.org/2.7/library/os.html#os.getcwdu
+https://docs.python.org/2.7/library/os.html#os.getcwd
+
+https://docs.python.org/2/library/stdtypes.html#dict.has_key
+TODO https://docs.python.org/3/library/stdtypes.html#dict
+
+
+https://docs.python.org/3/library/2to3.html#2to3fixer-imports
+https://docs.python.org/3/library/2to3.html#2to3fixer-imports TODO
+
+
+https://docs.python.org/3/library/2to3.html#2to3fixer-imports2
+https://docs.python.org/3/library/2to3.html#2to3fixer-imports2 TODO
+
+https://docs.python.org/2.7/library/functions.html#intern
+https://docs.python.org/3/library/sys.html#sys.intern
+
+https://docs.python.org/2.7/library/itertools.html#itertools.ifilter
+https://docs.python.org/2.7/library/itertools.html#itertools.filter
+
+https://docs.python.org/2.7/library/itertools.html#itertools.izip
+https://docs.python.org/2.7/library/itertools.html#itertools.zip
+
+https://docs.python.org/2.7/library/itertools.html#itertools.imap
+https://docs.python.org/2.7/library/itertools.html#itertools.map
+
+https://docs.python.org/2.7/library/itertools.html#itertools.ifilterfalse
+https://docs.python.org/2.7/library/itertools.html#itertools.filterfalse
+
+https://docs.python.org/2.7/library/functions.html#long
+https://docs.python.org/2.7/library/functions.html#int
+
+https://docs.python.org/2.7/reference/datamodel.html#__metaclass__
+https://docs.python.org/2.7/reference/datamodel.html#metaclasses TODO
+
+Converts the old not-equal syntax, <>, to !=.
+Converts the old not-equal syntax, <>, to !=.
+
+https://docs.python.org/2.7/library/stdtypes.html#iterator.next
+https://docs.python.org/3/library/functions.html#next
+https://docs.python.org/2.7/library/csv.html#csv.csvreader.next
+https://docs.python.org/2.7/library/csv.html#csv.csvreader.next TODO A BUNCH OF THESE https://docs.python.org/2.7/search.html?q=next
+
+https://docs.python.org/2.7/reference/datamodel.html#object.__nonzero__
+https://docs.python.org/3/reference/datamodel.html#object.__bool__
+
+
+operator.isCallable(obj)
+callable(obj)
+
+operator.sequenceIncludes(obj)
+operator.contains(obj)
+
+operator.isSequenceType(obj)
+isinstance(obj, collections.abc.Sequence)
+
+operator.isMappingType(obj)
+isinstance(obj, collections.abc.Mapping)
+
+operator.isNumberType(obj)
+isinstance(obj, numbers.Number)
+
+operator.repeat(obj, n)
+operator.mul(obj, n)
+
+operator.irepeat(obj, n)
+operator.imul(obj, n)
+
+https://docs.python.org/2.7/library/operator.html#operator.setslice
+https://docs.python.org/2.7/library/operator.html#operator.setslice TODO and a bunch more here
+
+https://docs.python.org/2.7/reference/simple_stmts.html#print
+https://docs.python.org/2.7/library/functions.html#print
+
+https://docs.python.org/2.7/library/functions.html#raw_input
+https://docs.python.org/2.7/library/functions.html#input
+
+https://docs.python.org/2.7/library/functions.html#reduce
+https://docs.python.org/2.7/library/functools.html#functools.reduce
+
+https://docs.python.org/2.7/library/functions.html#reload
+https://docs.python.org/3/library/importlib.html#importlib.reload
+
+https://docs.python.org/2.7/library/sys.html#sys.maxint
+https://docs.python.org/2.7/library/sys.html#sys.maxsize
+
+Replaces backtick repr with the repr() function.
+
+https://docs.python.org/2.7/library/exceptions.html#exceptions.StandardError
+https://docs.python.org/2.7/library/exceptions.html#exceptions.Exception
+
+https://docs.python.org/2.7/library/sys.html#sys.exc_value
+https://docs.python.org/2.7/library/sys.html#sys.exc_info
+
+https://docs.python.org/2.7/library/sys.html#sys.exc_type
+https://docs.python.org/2.7/library/sys.html#sys.exc_info
+
+https://docs.python.org/2.7/library/sys.html#sys.exc_traceback
+https://docs.python.org/2.7/library/sys.html#sys.exc_info
+
+Fixes code broken from the removal of some members in the types module.
+
+https://docs.python.org/2.7/library/functions.html#unicode
+https://docs.python.org/2.7/library/functions.html#str
+
+https://docs.python.org/2.7/library/urllib2.html#module-urllib2
+https://docs.python.org/2.7/library/urllib.html#module-urllib TODO
+MAPPING = {"urllib":  [
+                ("urllib.request",
+                    ["URLopener", "FancyURLopener", "urlretrieve",
+                     "_urlopener", "urlopen", "urlcleanup",
+                     "pathname2url", "url2pathname", "getproxies"]),
+                ("urllib.parse",
+                    ["quote", "quote_plus", "unquote", "unquote_plus",
+                     "urlencode", "splitattr", "splithost", "splitnport",
+                     "splitpasswd", "splitport", "splitquery", "splittag",
+                     "splittype", "splituser", "splitvalue", ]),
+                ("urllib.error",
+                    ["ContentTooShortError"])],
+           "urllib2" : [
+                ("urllib.request",
+                    ["urlopen", "install_opener", "build_opener",
+                     "Request", "OpenerDirector", "BaseHandler",
+                     "HTTPDefaultErrorHandler", "HTTPRedirectHandler",
+                     "HTTPCookieProcessor", "ProxyHandler",
+                     "HTTPPasswordMgr",
+                     "HTTPPasswordMgrWithDefaultRealm",
+                     "AbstractBasicAuthHandler",
+                     "HTTPBasicAuthHandler", "ProxyBasicAuthHandler",
+                     "AbstractDigestAuthHandler",
+                     "HTTPDigestAuthHandler", "ProxyDigestAuthHandler",
+                     "HTTPHandler", "HTTPSHandler", "FileHandler",
+                     "FTPHandler", "CacheFTPHandler",
+                     "UnknownHandler"]),
+                ("urllib.error",
+                    ["URLError", "HTTPError"]),
+           ]
+}
+
+# Duplicate the url parsing functions for urllib2.
+MAPPING["urllib2"].append(MAPPING["urllib"][1])
+
+
+https://docs.python.org/2.7/library/functions.html#xrange
+https://docs.python.org/2.7/library/functions.html#range
+
+https://docs.python.org/2.7/library/stdtypes.html#file.xreadlines
+https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects TODO
