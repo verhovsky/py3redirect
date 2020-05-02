@@ -319,7 +319,7 @@
 'library/functions.html#xrange': 'library/functions.html#range',
 
 // TODO
-// 'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects',
+'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects',
 
 // Not part of 2to3
 'library/sets.html': 'library/stdtypes.html#set',
