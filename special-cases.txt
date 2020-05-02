@@ -147,9 +147,13 @@
 // TODO
 'reference/datamodel.html#__metaclass__': 'reference/datamodel.html#metaclasses' ,
 
-// TODO A BUNCH OF THESE search.html?q=next
-'library/stdtypes.html#iterator.next': 'library/functions.html#next',
-'library/csv.html#csv.csvreader.next': 'library/csv.html#csv.csvreader.next',
+// TODO: check I didn't miss any https://docs.python.org/2.7/search.html?q=next
+'library/stdtypes.html#iterator.next': 'library/stdtypes.html#iterator.__next__',
+'reference/expressions.html#generator.next': 'reference/expressions.html#generator.__next__',
+// TODO: redirect all file.*
+'library/stdtypes.html#file.next': 'library/io.html',
+'library/csv.html#csv.csvreader.next': 'library/csv.html#csv.csvreader.__next__',
+
 
 'reference/datamodel.html#object.__nonzero__': 'reference/datamodel.html#object.__bool__',
 
@@ -319,3 +323,4 @@
 
 // Not part of 2to3
 'library/sets.html': 'library/stdtypes.html#set',
+'library/multifile.html': 'library/email.html',
