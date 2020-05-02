@@ -39,7 +39,7 @@
 
 // https://docs.python.org/3/library/2to3.html#2to3fixer-imports
 // https://github.com/python/cpython/blob/531d1e541284bfd7944f8c66a5e8c3c3234afaff/Lib/lib2to3/fixes/fix_imports.py#L8-L58
-'library/stringio.html': 'library/io.html#io.StringIO'
+'library/stringio.html': 'library/io.html#io.StringIO',
 
 'library/stringio.html#module-cStringIO': 'library/io.html',
 
