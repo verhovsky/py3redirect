@@ -1,5 +1,4 @@
-https://docs.python.org/2.7/library/functions.html#apply
-https://docs.python.org/3/tutorial/controlflow.html#tut-unpacking-arguments
+'library/functions.html#apply': 'tutorial/controlflow.html#tut-unpacking-arguments',
 
 'library/unittest.html#unittest.TestCase.failUnlessEqual': 'library/unittest.html#unittest.TestCase.assertEqual',
 'library/unittest.html#unittest.TestCase.assertEquals': 'library/unittest.html#unittest.TestCase.assertEqual',
@@ -15,96 +14,221 @@ https://docs.python.org/3/tutorial/controlflow.html#tut-unpacking-arguments
 'library/unittest.html#unittest.TestCase.assertNotAlmostEquals': 'library/unittest.html#unittest.TestCase.assertNotAlmostEqual',
 
 
-https://docs.python.org/2.7/library/functions.html#basestring
-https://docs.python.org/2.7/library/functions.html#str
+'library/functions.html#basestring': 'library/functions.html#str',
 
-https://docs.python.org/2.7/library/functions.html#buffer
-https://docs.python.org/2.7/library/stdtypes.html#memoryview
+'library/functions.html#buffer': 'library/stdtypes.html#memoryview',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.iteritems
-https://docs.python.org/2.7/library/stdtypes.html#dict.items
+'library/stdtypes.html#dict.iteritems': 'library/stdtypes.html#dict.items',
+'library/stdtypes.html#dict.iterkeys': 'library/stdtypes.html#dict.keys',
+'library/stdtypes.html#dict.itervalues': 'library/stdtypes.html#dict.values',
+'library/stdtypes.html#dict.viewitems': 'library/stdtypes.html#dict.items',
+'library/stdtypes.html#dict.viewkeys': 'library/stdtypes.html#dict.keys',
+'library/stdtypes.html#dict.viewvalues': 'library/stdtypes.html#dict.values',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.iterkeys
-https://docs.python.org/2.7/library/stdtypes.html#dict.keys
+'reference/simple_stmts.html#exec': 'library/functions.html#exec',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.itervalues
-https://docs.python.org/2.7/library/stdtypes.html#dict.values
+// TODO: something better?
+// library/functions.html#open library/functions.html#compile library/functions.html#exec
+// 'library/functions.html#execfile': 'whatsnew/3.0.html#builtins',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.viewitems
-https://docs.python.org/2.7/library/stdtypes.html#dict.items
+'library/sys.html#sys.exitfunc': 'library/atexit.html#module-atexit',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.viewkeys
-https://docs.python.org/2.7/library/stdtypes.html#dict.keys
+'library/os.html#os.getcwdu': 'library/os.html#os.getcwd',
 
-https://docs.python.org/2.7/library/stdtypes.html#dict.viewvalues
-https://docs.python.org/2.7/library/stdtypes.html#dict.values
+'library/stdtypes.html#dict.has_key': 'library/stdtypes.html#dict',
 
-https://docs.python.org/2.7/reference/simple_stmts.html#exec
-https://docs.python.org/3/library/functions.html#exec
+// https://docs.python.org/3/library/2to3.html#2to3fixer-imports
+'library/sets.html': 'library/stdtypes.html#set',
 
-https://docs.python.org/2.7/library/functions.html#execfile
-https://docs.python.org/2.7/library/functions.html#open https://docs.python.org/2.7/library/functions.html#compile https://docs.python.org/3/library/functions.html#exec
+'library/stringio.html': 'library/io.html#io.StringIO'
 
-https://docs.python.org/2.7/library/sys.html#sys.exitfunc
-https://docs.python.org/3/library/atexit.html#module-atexit
+https://docs.python.org/2.7/library/__builtin__.html
+https://docs.python.org/3/library/builtins.html
+
+https://docs.python.org/2.7/library/copy_reg.html
+https://docs.python.org/3/library/copyreg.html
+
+https://docs.python.org/2.7/library/stringio.html
+https://docs.python.org/3/library/io.html
+
+https://docs.python.org/2.7/library/stringio.html#module-cStringIO
+https://docs.python.org/3/library/io.html
+
+https://docs.python.org/2.7/library/pickle.html#module-cPickle
+https://docs.python.org/3/library/pickle.html
+
+https://docs.python.org/2.7/library/__builtin__.html
+https://docs.python.org/3/library/builtins.html
+
+https://docs.python.org/2.7/library/copy_reg.html
+https://docs.python.org/3/library/copyreg.html
+
+// TODO all of these # need to be lower case
+https://docs.python.org/2.7/library/Queue.html https://docs.python.org/3/library/queue.html
+
+// TODO all of these # need to be lower case
+https://docs.python.org/2.7/library/SocketServer.html https://docs.python.org/3/library/socketserver.html
+
+// TODO all of these # need to be lower case
+https://docs.python.org/2.7/library/ConfigParser.html https://docs.python.org/3/library/configparser.html
+
+// TODO all these need to be lower case
+https://docs.python.org/2.7/library/repr.html
+https://docs.python.org/3/library/reprlib.html
+
+https://docs.python.org/2.7/library/FileDialog.html https://docs.python.org/3/library/tkinter.filedialog.html
+https://docs.python.org/2.7/library/tkFileDialog.html https://docs.python.org/3/library/tkinter.filedialog.html
+https://docs.python.org/2.7/library/SimpleDialog.html https://docs.python.org/3/library/tkinter.simpledialog.html
+https://docs.python.org/2.7/library/tkSimpleDialog.html https://docs.python.org/3/library/tkinter.simpledialog.html
+https://docs.python.org/2.7/library/tkColorChooser.html https://docs.python.org/3/library/tkinter.colorchooser.html
+https://docs.python.org/2.7/library/tkCommonDialog.html https://docs.python.org/3/library/tkinter.commondialog.html
+https://docs.python.org/2.7/library/Dialog.html https://docs.python.org/3/library/tkinter.dialog.html
+https://docs.python.org/2.7/library/Tkdnd.html https://docs.python.org/3/library/tkinter.dnd.html
+https://docs.python.org/2.7/library/tkFont.html https://docs.python.org/3/library/tkinter.font.html
+https://docs.python.org/2.7/library/tkMessageBox.html https://docs.python.org/3/library/tkinter.messagebox.html
+https://docs.python.org/2.7/library/ScrolledText.html https://docs.python.org/3/library/tkinter.scrolledtext.html
+https://docs.python.org/2.7/library/Tkconstants.html https://docs.python.org/3/library/tkinter.constants.html
+
+https://docs.python.org/2.7/library/tix.html
+https://docs.python.org/3/library/tkinter.tix.html
+
+https://docs.python.org/2.7/library/ttk.html
+https://docs.python.org/3/library/tkinter.ttk.html
+
+// TODO: all of these
+https://docs.python.org/2.7/library/Tkinter.html https://docs.python.org/3/library/tkinter.html
+
+// TODO what?
+https://docs.python.org/2.7/library/markupbase.html https://docs.python.org/3/library/_markupbase.html
+
+https://docs.python.org/2.7/library/_winreg.html
+https://docs.python.org/3/library/winreg.html
+
+// TODO: just link to multithreading directly? that's what the docs say
+https://docs.python.org/2.7/library/thread.html
+https://docs.python.org/3/library/_thread.html
+https://docs.python.org/2.7/library/dummy_thread.html
+https://docs.python.org/3/library/_dummy_thread.html
+
+// TODO: doesn't exist
+https://docs.python.org/2.7/library/dbhash.html
+https://docs.python.org/3/library/dbm.html
+
+https://docs.python.org/2.7/library/dumbdbm.html
+https://docs.python.org/3/library/dbm.html#module-dbm.dumb
+
+// TODO: this is also the top level dbm docs
+https://docs.python.org/2.7/library/dbm.html
+https://docs.python.org/3/library/dbm.ndbm.html
+
+https://docs.python.org/2.7/library/gdbm.html
+https://docs.python.org/3/library/dbm.html#module-dbm.gnu
+
+https://docs.python.org/2.7/library/xmlrpclib.html
+https://docs.python.org/3/library/xmlrpc.client.html
+
+https://docs.python.org/2.7/library/docxmlrpcserver.html
+https://docs.python.org/3/library/xmlrpc.server.html
+
+https://docs.python.org/2.7/library/simplexmlrpcserver.html
+https://docs.python.org/3/library/xmlrpc.server.html
+
+https://docs.python.org/2.7/library/httplib.html
+https://docs.python.org/3/library/http.client.html
+
+https://docs.python.org/2.7/library/htmllib.html#module-htmlentitydefs
+https://docs.python.org/3/library/html.entities.html
+
+https://docs.python.org/2.7/library/htmlparser.html
+https://docs.python.org/3/library/html.parser.html
+
+https://docs.python.org/2.7/library/cookie.html
+https://docs.python.org/3/library/http.cookies.html
+
+https://docs.python.org/2.7/library/cookielib.html
+https://docs.python.org/3/library/http.cookiejar.html
+
+// TODO: all these
+https://docs.python.org/2.7/library/basehttpserver.html
+https://docs.python.org/3/library/http.server.html
+https://docs.python.org/2.7/library/simplehttpserver.html
+https://docs.python.org/3/library/http.server.html
+https://docs.python.org/2.7/library/cgihttpserver.html
+https://docs.python.org/3/library/http.server.html
+
+// TODO: link all 3 functions to subprocess.run specifically?
+https://docs.python.org/2.7/library/commands.html
+https://docs.python.org/3/library/subprocess.html
+
+https://docs.python.org/2.7/library/UserString.html https://docs.python.org/3/library/collections.html
+https://docs.python.org/2.7/library/UserList.html https://docs.python.org/3/library/collections.html
+
+https://docs.python.org/2.7/library/urlparse.html
+https://docs.python.org/3/library/urllib.parse.html
+
+https://docs.python.org/2.7/library/robotparser.html
+https://docs.python.org/3/library/urllib.robotparser.html
+
+https://docs.python.org/2.7/library/whichdb.html
+https://docs.python.org/3/library/dbm.html
+
+https://docs.python.org/2.7/library/anydbm.html
+https://docs.python.org/3/library/dbm.html
+
+https://docs.python.org/2.6/library/test.html#module-test.test_support
+https://docs.python.org/2.7/library/test.html#module-test.support
+
+'library/functions.html#intern': 'library/sys.html#sys.intern',
+
+'library/itertools.html#itertools.ifilter': 'library/itertools.html#itertools.filter',
+'library/itertools.html#itertools.izip': 'library/itertools.html#itertools.zip',
+'library/itertools.html#itertools.imap': 'library/itertools.html#itertools.map',
+'library/itertools.html#itertools.ifilterfalse': 'library/itertools.html#itertools.filterfalse',
+
+'library/functions.html#long': 'library/functions.html#int',
+
+// TODO
+'reference/datamodel.html#__metaclass__': 'reference/datamodel.html#metaclasses' ,
+
+//TODO A BUNCH OF THESE search.html?q=next
+'library/stdtypes.html#iterator.next': 'library/functions.html#next',
+'library/csv.html#csv.csvreader.next': 'library/csv.html#csv.csvreader.next',
+
+'reference/datamodel.html#object.__nonzero__': 'reference/datamodel.html#object.__bool__',
 
 
-func_closure, func_code, func_defaults, func_dict, func_doc, func_globals, func_name
-__closure__, __code__, __defaults__, __dict__, __doc__, __globals__, __name__
+https://docs.python.org/2.7/library/operator.html#operator.delslice
+https://docs.python.org/3/library/operator.html#operator.delitem
+https://docs.python.org/2.7/library/operator.html#operator.__delslice__
+https://docs.python.org/3/library/operator.html#operator.__delitem__
 
 
-https://docs.python.org/2.7/library/os.html#os.getcwdu
-https://docs.python.org/2.7/library/os.html#os.getcwd
+https://docs.python.org/2.7/library/operator.html#operator.getslice
+https://docs.python.org/3/library/operator.html#operator.getitem
+https://docs.python.org/2.7/library/operator.html#operator.__getslice__
+https://docs.python.org/3/library/operator.html#operator.__getitem__
 
-https://docs.python.org/2/library/stdtypes.html#dict.has_key
-TODO https://docs.python.org/3/library/stdtypes.html#dict
+https://docs.python.org/2.7/library/operator.html#operator.setslice
+https://docs.python.org/3/library/operator.html#operator.setitem
+https://docs.python.org/2.7/library/operator.html#operator.__setslice__
+https://docs.python.org/3/library/operator.html#operator.__setitem__
 
+https://docs.python.org/2.7/library/operator.html#operator.repeat
+https://docs.python.org/3/library/operator.html#operator.mul
+https://docs.python.org/2.7/library/operator.html#operator.__repeat__
+https://docs.python.org/3/library/operator.html#operator.__mul__
 
-https://docs.python.org/3/library/2to3.html#2to3fixer-imports
-https://docs.python.org/3/library/2to3.html#2to3fixer-imports TODO
-
-
-https://docs.python.org/3/library/2to3.html#2to3fixer-imports2
-https://docs.python.org/3/library/2to3.html#2to3fixer-imports2 TODO
-
-https://docs.python.org/2.7/library/functions.html#intern
-https://docs.python.org/3/library/sys.html#sys.intern
-
-https://docs.python.org/2.7/library/itertools.html#itertools.ifilter
-https://docs.python.org/2.7/library/itertools.html#itertools.filter
-
-https://docs.python.org/2.7/library/itertools.html#itertools.izip
-https://docs.python.org/2.7/library/itertools.html#itertools.zip
-
-https://docs.python.org/2.7/library/itertools.html#itertools.imap
-https://docs.python.org/2.7/library/itertools.html#itertools.map
-
-https://docs.python.org/2.7/library/itertools.html#itertools.ifilterfalse
-https://docs.python.org/2.7/library/itertools.html#itertools.filterfalse
-
-https://docs.python.org/2.7/library/functions.html#long
-https://docs.python.org/2.7/library/functions.html#int
-
-https://docs.python.org/2.7/reference/datamodel.html#__metaclass__
-https://docs.python.org/2.7/reference/datamodel.html#metaclasses TODO
-
-Converts the old not-equal syntax, <>, to !=.
-Converts the old not-equal syntax, <>, to !=.
-
-https://docs.python.org/2.7/library/stdtypes.html#iterator.next
-https://docs.python.org/3/library/functions.html#next
-https://docs.python.org/2.7/library/csv.html#csv.csvreader.next
-https://docs.python.org/2.7/library/csv.html#csv.csvreader.next TODO A BUNCH OF THESE https://docs.python.org/2.7/search.html?q=next
-
-https://docs.python.org/2.7/reference/datamodel.html#object.__nonzero__
-https://docs.python.org/3/reference/datamodel.html#object.__bool__
+https://docs.python.org/2.7/library/operator.html#operator.irepeat
+https://docs.python.org/3/library/operator.html#operator.imul
+https://docs.python.org/2.7/library/operator.html#operator.__irepeat__
+https://docs.python.org/3/library/operator.html#operator.__imul__
 
 
-operator.isCallable(obj)
-callable(obj)
+https://docs.python.org/2.7/library/operator.html#operator.isCallable
+https://docs.python.org/3/library/functions.html#callable
 
-operator.sequenceIncludes(obj)
-operator.contains(obj)
+https://docs.python.org/2.7/library/operator.html#operator.sequenceIncludes
+https://docs.python.org/2.7/library/operator.html#operator.contains
 
 operator.isSequenceType(obj)
 isinstance(obj, collections.abc.Sequence)
@@ -115,51 +239,27 @@ isinstance(obj, collections.abc.Mapping)
 operator.isNumberType(obj)
 isinstance(obj, numbers.Number)
 
-operator.repeat(obj, n)
-operator.mul(obj, n)
+'reference/simple_stmts.html#print': 'library/functions.html#print',
 
-operator.irepeat(obj, n)
-operator.imul(obj, n)
+'library/functions.html#raw_input': 'library/functions.html#input',
 
-https://docs.python.org/2.7/library/operator.html#operator.setslice
-https://docs.python.org/2.7/library/operator.html#operator.setslice TODO and a bunch more here
+'library/functions.html#reduce': 'library/functools.html#functools.reduce',
 
-https://docs.python.org/2.7/reference/simple_stmts.html#print
-https://docs.python.org/2.7/library/functions.html#print
+'library/functions.html#reload': 'library/importlib.html#importlib.reload',
 
-https://docs.python.org/2.7/library/functions.html#raw_input
-https://docs.python.org/2.7/library/functions.html#input
+'library/sys.html#sys.maxint': 'library/sys.html#sys.maxsize',
 
-https://docs.python.org/2.7/library/functions.html#reduce
-https://docs.python.org/2.7/library/functools.html#functools.reduce
 
-https://docs.python.org/2.7/library/functions.html#reload
-https://docs.python.org/3/library/importlib.html#importlib.reload
+'library/exceptions.html#exceptions.StandardError': 'library/exceptions.html#exceptions.Exception',
 
-https://docs.python.org/2.7/library/sys.html#sys.maxint
-https://docs.python.org/2.7/library/sys.html#sys.maxsize
+'library/sys.html#sys.exc_value': 'library/sys.html#sys.exc_info',
 
-Replaces backtick repr with the repr() function.
+'library/sys.html#sys.exc_type': 'library/sys.html#sys.exc_info',
 
-https://docs.python.org/2.7/library/exceptions.html#exceptions.StandardError
-https://docs.python.org/2.7/library/exceptions.html#exceptions.Exception
+'library/sys.html#sys.exc_traceback': 'library/sys.html#sys.exc_info',
 
-https://docs.python.org/2.7/library/sys.html#sys.exc_value
-https://docs.python.org/2.7/library/sys.html#sys.exc_info
+'library/functions.html#unicode': 'library/functions.html#str',
 
-https://docs.python.org/2.7/library/sys.html#sys.exc_type
-https://docs.python.org/2.7/library/sys.html#sys.exc_info
-
-https://docs.python.org/2.7/library/sys.html#sys.exc_traceback
-https://docs.python.org/2.7/library/sys.html#sys.exc_info
-
-Fixes code broken from the removal of some members in the types module.
-
-https://docs.python.org/2.7/library/functions.html#unicode
-https://docs.python.org/2.7/library/functions.html#str
-
-https://docs.python.org/2.7/library/urllib2.html#module-urllib2
-https://docs.python.org/2.7/library/urllib.html#module-urllib TODO
 MAPPING = {"urllib":  [
                 ("urllib.request",
                     ["URLopener", "FancyURLopener", "urlretrieve",
@@ -187,17 +287,17 @@ MAPPING = {"urllib":  [
                      "HTTPHandler", "HTTPSHandler", "FileHandler",
                      "FTPHandler", "CacheFTPHandler",
                      "UnknownHandler"]),
+                ("urllib.parse",
+                    ["quote", "quote_plus", "unquote", "unquote_plus",
+                     "urlencode", "splitattr", "splithost", "splitnport",
+                     "splitpasswd", "splitport", "splitquery", "splittag",
+                     "splittype", "splituser", "splitvalue", ]),
                 ("urllib.error",
                     ["URLError", "HTTPError"]),
            ]
 }
 
-# Duplicate the url parsing functions for urllib2.
-MAPPING["urllib2"].append(MAPPING["urllib"][1])
 
+'library/functions.html#xrange': 'library/functions.html#range',
 
-https://docs.python.org/2.7/library/functions.html#xrange
-https://docs.python.org/2.7/library/functions.html#range
-
-https://docs.python.org/2.7/library/stdtypes.html#file.xreadlines
-https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects TODO
+'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects' TODO,
