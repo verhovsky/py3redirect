@@ -38,13 +38,8 @@
 'library/stdtypes.html#dict.has_key': 'library/stdtypes.html#dict',
 
 // https://docs.python.org/3/library/2to3.html#2to3fixer-imports
+// https://github.com/python/cpython/blob/531d1e541284bfd7944f8c66a5e8c3c3234afaff/Lib/lib2to3/fixes/fix_imports.py#L8-L58
 'library/stringio.html': 'library/io.html#io.StringIO'
-
-'library/__builtin__.html': 'library/builtins.html',
-
-'library/copy_reg.html': 'library/copyreg.html',
-
-'library/stringio.html': 'library/io.html',
 
 'library/stringio.html#module-cStringIO': 'library/io.html',
 
@@ -152,7 +147,7 @@
 // TODO
 'reference/datamodel.html#__metaclass__': 'reference/datamodel.html#metaclasses' ,
 
-//TODO A BUNCH OF THESE search.html?q=next
+// TODO A BUNCH OF THESE search.html?q=next
 'library/stdtypes.html#iterator.next': 'library/functions.html#next',
 'library/csv.html#csv.csvreader.next': 'library/csv.html#csv.csvreader.next',
 
@@ -319,7 +314,8 @@
 
 'library/functions.html#xrange': 'library/functions.html#range',
 
-'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects' TODO,
+// TODO
+// 'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects',
 
 // Not part of 2to3
 'library/sets.html': 'library/stdtypes.html#set',
