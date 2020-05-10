@@ -1,7 +1,4 @@
 (function () {
-    const URL_REGEX = /^https?:\/\/docs\.python\.org\/2[^\/]*?\/(.*)/;
-    const URL_REPLACEMENT = "https://docs.python.org/3/$1";
-
     const SPECIAL_CASES = {
         // TODO: these links might break when 2to3 is removed
         // https://docs.python.org/library/2to3.html#2to3fixer-apply
