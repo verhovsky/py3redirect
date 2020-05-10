@@ -96,14 +96,8 @@
         'library/thread.html': 'library/_thread.html',
         'library/dummy_thread.html': 'library/_dummy_thread.html',
 
-        // TODO: No module named 'dbm.bsd'
-        // 'library/dbhash.html': 'library/dbm.bsd.html',
-        'library/dbhash.html': 'library/dbm.html',
-
         'library/dumbdbm.html': 'library/dbm.html#module-dbm.dumb',
-
         'library/dbm.html': 'library/dbm.ndbm.html',
-
         'library/gdbm.html': 'library/dbm.html#module-dbm.gnu',
 
         'library/xmlrpclib.html': 'library/xmlrpc.client.html',
