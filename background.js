@@ -3,8 +3,11 @@
     const URL_REPLACEMENT = "https://docs.python.org/3/$1";
 
     const SPECIAL_CASES = {
+        // TODO: these links might break when 2to3 is removed
+        // https://docs.python.org/library/2to3.html#2to3fixer-apply
         'library/functions.html#apply': 'tutorial/controlflow.html#tut-unpacking-arguments',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-asserts
         'library/unittest.html#unittest.TestCase.failUnlessEqual': 'library/unittest.html#unittest.TestCase.assertEqual',
         'library/unittest.html#unittest.TestCase.assertEquals': 'library/unittest.html#unittest.TestCase.assertEqual',
         'library/unittest.html#unittest.TestCase.failIfEqual': 'library/unittest.html#unittest.TestCase.assertNotEqual',
@@ -18,11 +21,13 @@
         'library/unittest.html#unittest.TestCase.failIfAlmostEqual': 'library/unittest.html#unittest.TestCase.assertNotAlmostEqual',
         'library/unittest.html#unittest.TestCase.assertNotAlmostEquals': 'library/unittest.html#unittest.TestCase.assertNotAlmostEqual',
 
-
+        // https://docs.python.org/library/2to3.html#2to3fixer-basestring
         'library/functions.html#basestring': 'library/functions.html#str',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-buffer
         'library/functions.html#buffer': 'library/stdtypes.html#memoryview',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-dict
         'library/stdtypes.html#dict.iteritems': 'library/stdtypes.html#dict.items',
         'library/stdtypes.html#dict.iterkeys': 'library/stdtypes.html#dict.keys',
         'library/stdtypes.html#dict.itervalues': 'library/stdtypes.html#dict.values',
@@ -30,19 +35,31 @@
         'library/stdtypes.html#dict.viewkeys': 'library/stdtypes.html#dict.keys',
         'library/stdtypes.html#dict.viewvalues': 'library/stdtypes.html#dict.values',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-exec
         'reference/simple_stmts.html#exec': 'library/functions.html#exec',
 
-        // TODO: something better?
-        // library/functions.html#open library/functions.html#compile library/functions.html#exec
-        // 'library/functions.html#execfile': 'whatsnew/3.0.html#builtins',
+        // https://docs.python.org/library/2to3.html#2to3fixer-execfile
+        // TODO: don't redirect? it's replaced by exec(open(fn).read())
+        // https://docs.python.org/whatsnew/3.0.html#builtins
+        'library/functions.html#execfile': 'library/functions.html#exec',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-exitfunc
         'library/sys.html#sys.exitfunc': 'library/atexit.html#module-atexit',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-filter
+        // https://docs.python.org/library/2to3.html#2to3fixer-funcattrs
+        // https://docs.python.org/library/2to3.html#2to3fixer-future
+
+        // https://docs.python.org/library/2to3.html#2to3fixer-getcwdu
         'library/os.html#os.getcwdu': 'library/os.html#os.getcwd',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-has_key
         'library/stdtypes.html#dict.has_key': 'library/stdtypes.html#dict',
 
-        // https://docs.python.org/3/library/2to3.html#2to3fixer-imports
+        // https://docs.python.org/library/2to3.html#2to3fixer-idioms
+        // https://docs.python.org/library/2to3.html#2to3fixer-import
+
+        // https://docs.python.org/library/2to3.html#2to3fixer-imports
         // https://github.com/python/cpython/blob/531d1e541284bfd7944f8c66a5e8c3c3234afaff/Lib/lib2to3/fixes/fix_imports.py#L8-L58
         'library/stringio.html': 'library/io.html#io.StringIO',
 
@@ -61,66 +78,50 @@
 
         'library/repr.html': 'library/reprlib.html',
 
-        // TODO: what?
-        // https://docs.python.org/2.7/library/FileDialog.html https://docs.python.org/3/library/tkinter.filedialog.html
-        // https://docs.python.org/2.7/library/tkFileDialog.html https://docs.python.org/3/library/tkinter.filedialog.html
-        // https://docs.python.org/2.7/library/SimpleDialog.html https://docs.python.org/3/library/tkinter.simpledialog.html
-        // https://docs.python.org/2.7/library/tkSimpleDialog.html https://docs.python.org/3/library/tkinter.simpledialog.html
-        // https://docs.python.org/2.7/library/tkColorChooser.html https://docs.python.org/3/library/tkinter.colorchooser.html
-        // https://docs.python.org/2.7/library/tkCommonDialog.html https://docs.python.org/3/library/tkinter.commondialog.html
-        // https://docs.python.org/2.7/library/Dialog.html https://docs.python.org/3/library/tkinter.dialog.html
-        // https://docs.python.org/2.7/library/Tkdnd.html https://docs.python.org/3/library/tkinter.dnd.html
-        // https://docs.python.org/2.7/library/tkFont.html https://docs.python.org/3/library/tkinter.font.html
-        // https://docs.python.org/2.7/library/tkMessageBox.html https://docs.python.org/3/library/tkinter.messagebox.html
-        // https://docs.python.org/2.7/library/ScrolledText.html https://docs.python.org/3/library/tkinter.scrolledtext.html
-        // https://docs.python.org/2.7/library/Tkconstants.html https://docs.python.org/3/library/tkinter.constants.html
+        'library/scrolledtext.html#module-ScrolledText': 'library/tkinter.scrolledtext.html#module-tkinter.scrolledtext',
 
         'library/tix.html': 'library/tkinter.tix.html',
-
         'library/ttk.html': 'library/tkinter.ttk.html',
-
-        // TODO: lowercase all of these
-        // https://docs.python.org/3/library/tkinter.html
-
-        // TODO what?
-        // https://docs.python.org/2.7/library/markupbase.html https://docs.python.org/3/library/_markupbase.html
+        'library/tkinter.html#Tkinter.Tk': 'library/tkinter.html#tkinter.Tk',
+        'library/tkinter.html#Tkinter.Tcl': 'library/tkinter.html#tkinter.Tcl',
+        'library/tkinter.html#Tkinter.Widget.tk.createfilehandler': 'library/tkinter.html#tkinter.Widget.tk.createfilehandler',
+        'library/tkinter.html#Tkinter.Widget.tk.deletefilehandler': 'library/tkinter.html#tkinter.Widget.tk.deletefilehandler',
+        'library/tkinter.html#Tkinter.READABLE': 'library/tkinter.html#tkinter.READABLE',
+        'library/tkinter.html#Tkinter.WRITABLE': 'library/tkinter.html#tkinter.WRITABLE',
+        'library/tkinter.html#Tkinter.EXCEPTION': 'library/tkinter.html#tkinter.EXCEPTION',
 
         'library/_winreg.html': 'library/winreg.html',
 
-        // TODO: just link to multithreading directly? that's what the docs say
         'library/thread.html': 'library/_thread.html',
         'library/dummy_thread.html': 'library/_dummy_thread.html',
 
-        // TODO: doesn't exist
-        // 'library/dbhash.html': 'library/dbm.html',
+        // TODO: No module named 'dbm.bsd'
+        // 'library/dbhash.html': 'library/dbm.bsd.html',
+        'library/dbhash.html': 'library/dbm.html',
 
         'library/dumbdbm.html': 'library/dbm.html#module-dbm.dumb',
 
-        // TODO: this is also the top level dbm docs
         'library/dbm.html': 'library/dbm.ndbm.html',
 
         'library/gdbm.html': 'library/dbm.html#module-dbm.gnu',
 
         'library/xmlrpclib.html': 'library/xmlrpc.client.html',
-
+        // TODO: all these
         'library/docxmlrpcserver.html': 'library/xmlrpc.server.html',
-
         'library/simplexmlrpcserver.html': 'library/xmlrpc.server.html',
 
         'library/httplib.html': 'library/http.client.html',
-
         'library/htmllib.html#module-htmlentitydefs': 'library/html.entities.html',
-
         'library/htmlparser.html': 'library/html.parser.html',
-
         'library/cookie.html': 'library/http.cookies.html',
-
         'library/cookielib.html': 'library/http.cookiejar.html',
-
         // TODO: all these
         'library/basehttpserver.html': 'library/http.server.html',
         'library/simplehttpserver.html': 'library/http.server.html',
         'library/cgihttpserver.html': 'library/http.server.html',
+
+        // This is commented out in Lib/lib2to3/fixes/fix_imports.py
+        'library/test.html#module-test.test_support': 'library/test.html#module-test.support',
 
         // TODO: link all 3 functions to subprocess.run specifically?
         'library/commands.html': 'library/subprocess.html',
@@ -133,25 +134,28 @@
 
         'library/robotparser.html': 'library/urllib.robotparser.html',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-imports2
         'library/whichdb.html': 'library/dbm.html',
-
         'library/anydbm.html': 'library/dbm.html',
 
-        'library/test.html#module-test.test_support': 'library/test.html#module-test.support',
+        // https://docs.python.org/library/2to3.html#2to3fixer-input
 
-
+        // https://docs.python.org/library/2to3.html#2to3fixer-intern
         'library/functions.html#intern': 'library/sys.html#sys.intern',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-itertools
         'library/itertools.html#itertools.ifilter': 'library/itertools.html#itertools.filter',
         'library/itertools.html#itertools.izip': 'library/itertools.html#itertools.zip',
         'library/itertools.html#itertools.imap': 'library/itertools.html#itertools.map',
         'library/itertools.html#itertools.ifilterfalse': 'library/itertools.html#itertools.filterfalse',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-long
         'library/functions.html#long': 'library/functions.html#int',
 
-        // TODO
+        // https://docs.python.org/library/2to3.html#2to3fixer-metaclass
         'reference/datamodel.html#__metaclass__': 'reference/datamodel.html#metaclasses',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-next
         // TODO: check I didn't miss any https://docs.python.org/2.7/search.html?q=next
         'library/stdtypes.html#iterator.next': 'library/stdtypes.html#iterator.__next__',
         'reference/expressions.html#generator.next': 'reference/expressions.html#generator.__next__',
@@ -160,100 +164,67 @@
         'library/csv.html#csv.csvreader.next': 'library/csv.html#csv.csvreader.__next__',
 
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-nonzero
         'reference/datamodel.html#object.__nonzero__': 'reference/datamodel.html#object.__bool__',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-numliterals
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-operator
         'library/operator.html#operator.delslice': 'library/operator.html#operator.delitem',
         'library/operator.html#operator.__delslice__': 'library/operator.html#operator.__delitem__',
-
-
         'library/operator.html#operator.getslice': 'library/operator.html#operator.getitem',
         'library/operator.html#operator.__getslice__': 'library/operator.html#operator.__getitem__',
-
         'library/operator.html#operator.setslice': 'library/operator.html#operator.setitem',
         'library/operator.html#operator.__setslice__': 'library/operator.html#operator.__setitem__',
-
         'library/operator.html#operator.repeat': 'library/operator.html#operator.mul',
         'library/operator.html#operator.__repeat__': 'library/operator.html#operator.__mul__',
-
         'library/operator.html#operator.irepeat': 'library/operator.html#operator.imul',
         'library/operator.html#operator.__irepeat__': 'library/operator.html#operator.__imul__',
-
-
         'library/operator.html#operator.isCallable': 'library/functions.html#callable',
-
         'library/operator.html#operator.sequenceIncludes': 'library/operator.html#operator.contains',
-
+        // TODO
         // operator.isSequenceType(obj)
         // isinstance(obj, collections.abc.Sequence)
-
         // operator.isMappingType(obj)
         // isinstance(obj, collections.abc.Mapping)
-
         // operator.isNumberType(obj)
         // isinstance(obj, numbers.Number)
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-print
         'reference/simple_stmts.html#print': 'library/functions.html#print',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-raw_input
         'library/functions.html#raw_input': 'library/functions.html#input',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-reduce
         'library/functions.html#reduce': 'library/functools.html#functools.reduce',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-reload
         'library/functions.html#reload': 'library/importlib.html#importlib.reload',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-renames
         'library/sys.html#sys.maxint': 'library/sys.html#sys.maxsize',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-repr
+
+        // https://docs.python.org/library/2to3.html#2to3fixer-standarderror
         'library/exceptions.html#exceptions.StandardError': 'library/exceptions.html#exceptions.Exception',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-sys_exc
         'library/sys.html#sys.exc_value': 'library/sys.html#sys.exc_info',
-
         'library/sys.html#sys.exc_type': 'library/sys.html#sys.exc_info',
-
         'library/sys.html#sys.exc_traceback': 'library/sys.html#sys.exc_info',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-throw
+        // https://docs.python.org/library/2to3.html#2to3fixer-tuple_params
+        // https://docs.python.org/library/2to3.html#2to3fixer-types
+
+        // https://docs.python.org/library/2to3.html#2to3fixer-unicode
         'library/functions.html#unicode': 'library/functions.html#str',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-urllib
+        // https://github.com/python/cpython/blob/master/Lib/lib2to3/fixes/fix_urllib.py#L12-L45
         // https://github.com/python/cpython/blob/531d1e541284bfd7944f8c66a5e8c3c3234afaff/Lib/lib2to3/fixes/fix_urllib.py#L12-L45
-        // MAPPING = {"urllib":  [
-        //                 ("urllib.request",
-        //                     ["URLopener", "FancyURLopener", "urlretrieve",
-        //                      "_urlopener", "urlopen", "urlcleanup",
-        //                      "pathname2url", "url2pathname", "getproxies"]),
-        //                 ("urllib.parse",
-        //                     ["quote", "quote_plus", "unquote", "unquote_plus",
-        //                      "urlencode", "splitattr", "splithost", "splitnport",
-        //                      "splitpasswd", "splitport", "splitquery", "splittag",
-        //                      "splittype", "splituser", "splitvalue", ]),
-        //                 ("urllib.error",
-        //                     ["ContentTooShortError"])],
-        //            "urllib2" : [
-        //                 ("urllib.request",
-        //                     ["urlopen", "install_opener", "build_opener",
-        //                      "Request", "OpenerDirector", "BaseHandler",
-        //                      "HTTPDefaultErrorHandler", "HTTPRedirectHandler",
-        //                      "HTTPCookieProcessor", "ProxyHandler",
-        //                      "HTTPPasswordMgr",
-        //                      "HTTPPasswordMgrWithDefaultRealm",
-        //                      "AbstractBasicAuthHandler",
-        //                      "HTTPBasicAuthHandler", "ProxyBasicAuthHandler",
-        //                      "AbstractDigestAuthHandler",
-        //                      "HTTPDigestAuthHandler", "ProxyDigestAuthHandler",
-        //                      "HTTPHandler", "HTTPSHandler", "FileHandler",
-        //                      "FTPHandler", "CacheFTPHandler",
-        //                      "UnknownHandler"]),
-        //                 ("urllib.parse",
-        //                     ["quote", "quote_plus", "unquote", "unquote_plus",
-        //                      "urlencode", "splitattr", "splithost", "splitnport",
-        //                      "splitpasswd", "splitport", "splitquery", "splittag",
-        //                      "splittype", "splituser", "splitvalue", ]),
-        //                 ("urllib.error",
-        //                     ["URLError", "HTTPError"]),
-        //            ]
-        // }
-        // for old_top in MAPPING:
-        //     for new_top, names in MAPPING[old_top]:
-        //         for name in names:
-        //             print(f"'library/{old_top}.html#{old_top}.{name}': 'library/{new_top}.html#{new_top}.{name}',")
         'library/urllib.html#urllib.URLopener': 'library/urllib.request.html#urllib.request.URLopener',
         'library/urllib.html#urllib.FancyURLopener': 'library/urllib.request.html#urllib.request.FancyURLopener',
         'library/urllib.html#urllib.urlretrieve': 'library/urllib.request.html#urllib.request.urlretrieve',
@@ -321,12 +292,17 @@
         'library/urllib2.html#urllib2.URLError': 'library/urllib.error.html#urllib.error.URLError',
         'library/urllib2.html#urllib2.HTTPError': 'library/urllib.error.html#urllib.error.HTTPError',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-xrange
         'library/functions.html#xrange': 'library/functions.html#range',
 
+        // https://docs.python.org/library/2to3.html#2to3fixer-xreadlines
         // TODO
         'library/stdtypes.html#file.xreadlines': 'tutorial/inputoutput.html#methods-of-file-objects',
 
+
         // Not part of 2to3
+
+        // https://docs.python.org/whatsnew/3.0.html#library-changes
         'library/sets.html': 'library/stdtypes.html#set',
         'library/multifile.html': 'library/email.html',
     };
@@ -370,20 +346,39 @@
         request.send();
     }
 
+    function toNewUrl(url) {
+        let parsedUrl = new URL(url);
+        let pathComponents = parsedUrl.pathname.substr(1).split('/');
+        if (parsedUrl.hostname !== "docs.python.org" || pathComponents.length < 2 ||
+                !pathComponents[0].startsWith('2')) {
+            return null
+        }
+
+        // The path without the version number
+        const lookupWithoutFragment = pathComponents.slice(1).join('/');
+        const lookupWithFragment = lookupWithoutFragment + parsedUrl.hash;
+
+        if (lookupWithFragment !== lookupWithoutFragment && lookupWithFragment in SPECIAL_CASES) {
+            const newUrl = new URL('https://docs.python.org/3/' + SPECIAL_CASES[lookupWithFragment])
+            newUrl.search = newUrl.search || parsedUrl.search;
+            return newUrl.toString()
+        }
+        if (lookupWithoutFragment in SPECIAL_CASES) {
+            const newUrl = new URL('https://docs.python.org/3/' + SPECIAL_CASES[lookupWithoutFragment])
+            newUrl.search = newUrl.search || parsedUrl.search;
+            newUrl.hash = newUrl.hash || parsedUrl.hash;
+            return newUrl.toString()
+        }
+        return 'https://docs.python.org/3/' + lookupWithoutFragment + parsedUrl.search + parsedUrl.hash;
+    }
     /*
      * onBeforeRequest listener that redirects to py3 docs immediately if the
      * requested page was visited before (using localStorage cache)
      */
     browserAPI.api.webRequest.onBeforeRequest.addListener(
         function (details) {
-            let url = details.url;
-            if (isEnabled && localStorage.getItem(url)) {
-                let newUrl = url.replace(URL_REGEX, URL_REPLACEMENT);
-                let matches = URL_REGEX.exec(details.url);
-                if (matches[1] in SPECIAL_CASES) {
-                    newUrl = URL_REPLACEMENT.replace('$1', '') + SPECIAL_CASES[matches[1]];
-                }
-                return {redirectUrl: newUrl};
+            if (isEnabled && localStorage.getItem(details.url)) {
+                return {redirectUrl: toNewUrl(details.url)};
             }
         },
         {
@@ -419,13 +414,8 @@
                 return;
             }
 
-            let matches = URL_REGEX.exec(sender.url);
-            if (matches) {
-                let newUrl = sender.url.replace(URL_REGEX, URL_REPLACEMENT);
-                if (matches[1] in SPECIAL_CASES) {
-                    newUrl = URL_REPLACEMENT.replace('$1', '') + SPECIAL_CASES[matches[1]];
-                }
-
+            let newUrl = toNewUrl(sender.url);
+            if (newUrl !== null) {
                 browserAPI.api.pageAction.setTitle({
                     tabId: tabId,
                     title: 'Redirecting...'
