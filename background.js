@@ -39,9 +39,10 @@
         'reference/simple_stmts.html#exec': 'library/functions.html#exec',
 
         // https://docs.python.org/library/2to3.html#2to3fixer-execfile
-        // TODO: don't redirect? it's replaced by exec(open(fn).read())
+        // Redirecting could be confusing. It's replaced by exec(open(fn).read())
+        // 'library/functions.html#execfile': 'library/functions.html#exec',
         // https://docs.python.org/whatsnew/3.0.html#builtins
-        'library/functions.html#execfile': 'library/functions.html#exec',
+        // 'library/functions.html#execfile': 'whatsnew/3.0.html#builtins',
 
         // https://docs.python.org/library/2to3.html#2to3fixer-exitfunc
         'library/sys.html#sys.exitfunc': 'library/atexit.html#module-atexit',
